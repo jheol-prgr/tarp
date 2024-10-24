@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con Marcos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="frame1" class="frame">
+            <div class="menu">
+                <h2>Menú del Marco 1</h2>
+                <ul class="horizontal-menu">
+                    <li><a href="#" onclick="mostrarResultado1('Opción 1')">Opción 1</a></li>
+                    <li><a href="#" onclick="mostrarResultado1('Opción 2')">Opción 2</a></li>
+                    <li><a href="#" onclick="mostrarResultado1('Opción 3')">Opción 3</a></li>
+                </ul>
+            </div>
+            <div id="resultado1" class="result">
+                Selecciona una opción del menú para ver el resultado aquí.
+            </div>
+        </div>
+        <div class="separator"></div>
+        <div id="frame2" class="frame">
+            <div class="menu menu2">
+                <h2>Menú del Marco 2</h2>
+                <ul>
+                    <li><a href="#" onclick="mostrarResultado2('Opción A')">Opción A</a></li>
+                    <li><a href="#" onclick="mostrarResultado2('Opción B')">Opción B</a></li>
+                    <li><a href="#" onclick="mostrarResultado2('Opción C')">Opción C</a></li>
+                </ul>
+            </div>
+            <div id="resultado2" class="result">
+                Selecciona una opción del menú para ver el resultado aquí.
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+

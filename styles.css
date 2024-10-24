@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Colocar los marcos en columna */
+    height: 100vh;
+}
+
+.frame {
+    flex: 1; /* Cada marco ocupa igual espacio */
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+/* Degradado para Marco 1 (naranja y amarillo) */
+#frame1 {
+    background: linear-gradient(to bottom, #FFA500, #FFFF00); /* Naranja a amarillo */
+}
+
+/* Degradado para Marco 2 (azul y celeste) */
+#frame2 {
+    background: linear-gradient(to bottom, #0000FF, #87CEEB); /* Azul a celeste */
+}
+
+.separator {
+    height: 10px;  /* Altura del separador */
+    background-color: #333;
+}
+
+.menu {
+    padding: 10px;
+    border-radius: 5px;
+    background: inherit; /* Mantener el fondo del marco (degradado) */
+}
+
+.menu h2 {
+    margin: 0;
+    text-align: center; /* Centrar el título del Marco 1 */
+}
+
+/* Estilo para el menú horizontal en Marco 1 */
+.horizontal-menu {
+    list-style-type: none;
+    padding: 0;
+    display: flex; /* Usar flexbox para alinear las opciones en horizontal */
+    margin: 0; /* Eliminar margen para alinear correctamente */
+    justify-content: center; /* Centrar las opciones del menú */
+}
+
+.horizontal-menu li {
+    margin-right: 15px; /* Espacio entre las opciones del menú */
+}
+
+.horizontal-menu li a {
+    text-decoration: none;
+    background-color: lime; /* Color de fondo de las opciones */
+    color: black; /* Color de texto negro */
+    padding: 5px 10px; /* Espaciado interno para los enlaces */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s;
+}
+
+.horizontal-menu li a:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Cambia el fondo al pasar el mouse */
+}
+
+/* Estilo para el menú del Marco 2 */
+.menu2 ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left; /* Alinear el contenido del menú del Marco 2 a la izquierda */
+}
+
+.menu2 ul li {
+    margin: 5px 0;
+}
+
+.menu2 ul li a {
+    text-decoration: none;
+    background-color: lime; /* Color de fondo de las opciones */
+    color: black; /* Color de texto negro */
+    padding: 5px 10px; /* Espaciado interno para los enlaces */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s;
+}
+
+.menu2 ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.2); /* Cambia el fondo al pasar el mouse */
+}
+
+/* Estilo para el contenido de resultado */
+.result {
+    background-color: white; /* Fondo blanco para el contenido de resultado */
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px; /* Espaciado superior para separar del menú */
+}
+
